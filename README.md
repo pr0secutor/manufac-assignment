@@ -7,7 +7,7 @@ This project visualizes agricultural data in India through a bar chart and a tab
 Before you start, make sure you have the following installed on your system:
 
 - **Node.js**:  You can download it from [https://nodejs.org](https://nodejs.org).
-- **Yarn**:  If you don't have Yarn installed, follow the instructions here: [https://yarnpkg.com/getting-started/install](https://yarnpkg.com/getting-started/install).
+- **Yarn**:  If you don't have Yarn installed, follow the instructions here: [https://phoenixnap.com/kb/yarn-windows](https://phoenixnap.com/kb/yarn-windows).
 
 ## Installation
 
@@ -30,10 +30,10 @@ Before you start, make sure you have the following installed on your system:
 ## Images for the tables
 
 **Table**
-![Image Alt Text](https://github.com/pr0secutor/manufac-assignment/blob/main/images/Screenshot%202024-12-31%20163051.png)
+![Table Image](https://github.com/pr0secutor/manufac-assignment/blob/main/images/Screenshot%202024-12-31%20163051.png)
 
 **Bar Chart**
-![Image Alt Text](https://github.com/pr0secutor/manufac-assignment/blob/main/images/Screenshot%202024-12-31%20163105.png)
+![Bar Chart Image](https://github.com/pr0secutor/manufac-assignment/blob/main/images/Screenshot%202024-12-31%20163105.png)
 
 ## Built With
 
