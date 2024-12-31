@@ -1,6 +1,6 @@
 # Indian Agriculture Data Visualization
 
-This project visualizes agricultural data in India through a bar chart and a table. It fetches data from a local JSON file, processes it, and displays the results in a table and bar chart format. The chart shows the average yield of various crops, and the table provides the maximum and minimum crop productions by year.
+This project visualizes agricultural data in India through a bar chart and a table. It uses data from a local JSON file made available by National Data and Analytics Platform(NITI Aayog), processes it, and displays the results in a table and bar chart format. The chart shows the average yield of various crops, and the table provides the maximum and minimum crop productions by year.
 
 ## Prerequisites
 
