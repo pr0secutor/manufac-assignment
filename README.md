@@ -22,7 +22,7 @@ Before you start, make sure you have the following installed on your system:
 1. **Start the development server**:
 
    ```bash
-   yarn start
+   yarn dev
    ```
 
 2. Open your web browser and go to [http://localhost:5173](http://localhost:5173). You should see the application running, displaying the agriculture data in both a table and a bar chart.
