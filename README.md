@@ -27,6 +27,12 @@ Before you start, make sure you have the following installed on your system:
 
 2. Open your web browser and go to [http://localhost:5173](http://localhost:5173). You should see the application running, displaying the agriculture data in both a table and a bar chart.
 
+## Images for the tables
+
+![Image Alt Text](https://github.com/pr0secutor/manufac-assignment/blob/main/images/Screenshot%202024-12-31%20163051.png)
+
+![Image Alt Text](https://github.com/pr0secutor/manufac-assignment/blob/main/images/Screenshot%202024-12-31%20163105.png)
+
 ## Built With
 
 - **React**: JavaScript library for building user interfaces.
