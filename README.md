@@ -29,10 +29,10 @@ Before you start, make sure you have the following installed on your system:
 
 ## Images for the tables
 
-Table
+**Table**
 ![Image Alt Text](https://github.com/pr0secutor/manufac-assignment/blob/main/images/Screenshot%202024-12-31%20163051.png)
 
-Bar Chart
+**Bar Chart**
 ![Image Alt Text](https://github.com/pr0secutor/manufac-assignment/blob/main/images/Screenshot%202024-12-31%20163105.png)
 
 ## Built With
