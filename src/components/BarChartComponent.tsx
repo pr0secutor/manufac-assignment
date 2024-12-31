@@ -14,8 +14,13 @@ const BarChartComponent: React.FC<{ data: ChartData[] }> = ({ data }) => {
       const chartInstance = echarts.init(chartRef.current);
 
       const options = {
-        grid:{
-          left:'4%'
+        title: {
+          text: 'Average Yield of Crops',
+          left: 'center',
+          top: '10'
+        },
+        grid: {
+          left: '4%'
         },
         xAxis: {
           type: 'category',
@@ -31,7 +36,7 @@ const BarChartComponent: React.FC<{ data: ChartData[] }> = ({ data }) => {
           {
             data: data.map((d) => d.averageYield),
             type: 'bar',
-            barCategoryGap: '10%', // Adjust space between bars
+            barCategoryGap: '10%',
           },
         ],
       };

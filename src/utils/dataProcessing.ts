@@ -1,31 +1,30 @@
 interface CropData {
-    year: string; // Year as a string, e.g., "Financial Year (Apr - Mar), 1950"
-    cropName: string; // Name of the crop
-    cropProduction: number | null; // Production value (can be null)
-    yieldOfCrops: number | null; // Yield value (can be null)
+    year: string;
+    cropName: string;
+    cropProduction: number | null;
+    yieldOfCrops: number | null;
   }
   
   interface TableData {
-    year: number; // Parsed year as a number
-    maxCrop: string; // Crop with maximum production
-    minCrop: string; // Crop with minimum production
+    year: number;
+    maxCrop: string;
+    minCrop: string;
   }
   
   interface ChartData {
-    crop: string; // Crop name
-    averageYield: number; // Average yield of the crop
+    crop: string;
+    averageYield: number;
   }
   
-  // Utility to extract year from "Financial Year (Apr - Mar), 1950"
   const parseYear = (yearString: string): number => {
     const match = yearString.match(/\d{4}/);
-    return match ? parseInt(match[0], 10) : 0; // Default to 0 if no year found
+    return match ? parseInt(match[0], 10) : 0;
   };
   
-  // Utility to safely get crop production, treating null/undefined as 0
+  
   const getSafeCropProduction = (crop: CropData) => crop.cropProduction ?? 0;
   
-  // Process data for the table
+  
   export const processTableData = (data: CropData[]): TableData[] => {
     const groupedByYear = data.reduce((acc, curr) => {
       const year = parseYear(curr.year);
@@ -52,12 +51,12 @@ interface CropData {
     });
   };
   
-  // Process data for the bar chart
+  
   export const processBarChartData = (data: CropData[]): ChartData[] => {
     const groupedByCrop = data.reduce((acc, curr) => {
       const crop = curr.cropName;
       acc[crop] = acc[crop] || [];
-      acc[crop].push(curr.yieldOfCrops ?? 0); // Treat null/undefined yield as 0
+      acc[crop].push(curr.yieldOfCrops ?? 0);
       return acc;
     }, {} as Record<string, number[]>);
   

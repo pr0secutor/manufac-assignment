@@ -28,7 +28,6 @@ const App = () => {
   const [chartData, setChartData] = useState<ChartData[]>([]);
 
   useEffect(() => {
-    // Map and format the JSON data with explicit type conversion
     const formattedData: CropData[] = agricultureData.map((entry) => ({
       year: entry["Year"],
       cropName: entry["Crop Name"],
@@ -47,10 +46,11 @@ const App = () => {
 
   return (
     <MantineProvider>
-      <div style={{overflow:'hidden'}}>
-        <h1 style={{marginLeft:'20px'}}>Indian Agriculture Data</h1>
+      <div style={{ overflow: 'hidden' }}>
+        <h1 style={{ marginLeft: '20px' }}>Indian Agriculture Data</h1>
         <TableComponent data={tableData} />
         <BarChartComponent data={chartData} />
+        {/* <p style={{ textAlign: 'center', }}>Average Yield of Crop</p> */}
       </div>
     </MantineProvider>
   );
